@@ -33,7 +33,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    // { href: "/#contact", icon: Contact, label: "Contact" }, // Add this line
+    { href: "/#contact", icon: Contact, label: "Contact" }, // Add this line
   ],
   contact: {
     email: "ashwaniagarwal333@gmail.com",
@@ -54,6 +54,7 @@ export const DATA = {
       },
       //twitter
       X: {
+        // changes made perfect
         name: "X",
         url: "https://dub.sh/dillion-twitter",
         icon: Icons.x,
