@@ -180,7 +180,7 @@ export const DATA = {
     {
       title: "CharityWave",
       href: "",
-      dates: "June 2023 - Present",
+      dates: "March 2024 - December 2024",
       active: true,
       description:
         "CharityWave is a crowdfunding platform that connects donors with verified causes, enabling seamless donations and transparent fund tracking to support meaningful social initiatives.",
@@ -215,7 +215,7 @@ export const DATA = {
     {
       title: "ThoughtStream",
       href: "",
-      dates: "April 2023 - September 2023",
+      dates: "April 2023 - July 2023",
       active: true,
       description:
         "ThoughtWave is a dynamic blogging platform where users can share ideas, engage with content, and connect through interactive features like commenting, liking, and personalized recommendations.",
@@ -249,7 +249,7 @@ export const DATA = {
     {
       title: "Ecommerce Store",
       href: "",
-      dates: "April 2023 - March 2024",
+      dates: "April 2023 - December 2023",
       active: true,
       description:
         "E-Commerce Website is a user-friendly online shopping platform offering a seamless browsing, secure payment, and efficient order management experience for both buyers and sellers.",
