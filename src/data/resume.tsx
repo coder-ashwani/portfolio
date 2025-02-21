@@ -85,7 +85,7 @@ export const DATA = {
       badges: [],
       // location: "",
       title: "Full Stack Intern",
-      // logoUrl: "/splunk.svg",
+      logoUrl: "",
       start: "May 2023",
       end: "July 2023",
       description:
@@ -97,7 +97,7 @@ export const DATA = {
       badges: [],
       // location: "San Francisco, CA",
       title: "Freelancer",
-      // logoUrl: "/lime.svg",
+      logoUrl: "",
       start: "January 2022",
       end: "Present",
       description:
@@ -149,7 +149,7 @@ export const DATA = {
     {
       title: "TutorSpot",
       href: "",
-      // dates: "Jan 2024 - Feb 2024",
+      dates: "June 2024 - Nov 2024",
       active: true,
       description:
         "TutorSpot connects students with expert tutors for personalized learning, offering real-time booking, subject-wise recommendations, and a seamless user experience.",
@@ -180,7 +180,7 @@ export const DATA = {
     {
       title: "CharityWave",
       href: "",
-      // dates: "June 2023 - Present",
+      dates: "June 2023 - Present",
       active: true,
       description:
         "CharityWave is a crowdfunding platform that connects donors with verified causes, enabling seamless donations and transparent fund tracking to support meaningful social initiatives.",
@@ -215,7 +215,7 @@ export const DATA = {
     {
       title: "ThoughtStream",
       href: "",
-      // dates: "April 2023 - September 2023",
+      dates: "April 2023 - September 2023",
       active: true,
       description:
         "ThoughtWave is a dynamic blogging platform where users can share ideas, engage with content, and connect through interactive features like commenting, liking, and personalized recommendations.",
@@ -249,7 +249,7 @@ export const DATA = {
     {
       title: "Ecommerce Store",
       href: "",
-      // dates: "April 2023 - March 2024",
+      dates: "April 2023 - March 2024",
       active: true,
       description:
         "E-Commerce Website is a user-friendly online shopping platform offering a seamless browsing, secure payment, and efficient order management experience for both buyers and sellers.",

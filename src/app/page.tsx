@@ -83,7 +83,7 @@ export default function Page() {
                 altText={work.company}
                 title={work.company}
                 subtitle={work.title}
-                href={work.href}
+                // href={work.href}
                 badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
                 description={work.description}
@@ -206,21 +206,21 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
-                <BlurFade
-                  key={project.title + project.dates}
-                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
-                >
-                  <HackathonCard
-                    title={project.title}
-                    description={project.description}
-                    location={project.location}
-                    dates={project.dates}
-                    image={project.image}
-                    links={project.links}
-                  />
-                </BlurFade>
-              ))}
+              {/* {DATA.hackathons.map((project, id) => (
+                // <BlurFade
+                //   key={project.title + project.dates}
+                //   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
+                // >
+                //   <HackathonCard
+                //     title={project.title}
+                //     description={project.description}
+                //     location={project.location}
+                //     dates={project.dates}
+                //     image={project.image}
+                //     links={project.links}
+                //   />
+                // </BlurFade>
+              ))} */}
             </ul>
           </BlurFade>
         </div>
@@ -295,7 +295,6 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-      
     </main>
   );
 }
