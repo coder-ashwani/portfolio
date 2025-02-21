@@ -239,7 +239,7 @@ export const DATA = {
         },
         {
           type: "Source",
-          href: "https://github.com/coder-ashwani/Thoughstream",
+          href: "https://github.com/coder-ashwani/Thoughtstream",
           icon: <Icons.github className="size-3" />,
         },
       ],
