@@ -10,14 +10,13 @@ export async function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-export async function generateMetadata(
-  props: {
-    params: Promise<{
-      slug: string;
-    }>;
-  }
-): Promise<Metadata | undefined> {
-  const params = await props.params;
+export async function generateMetadata({
+  params,
+}: {
+  params: {
+    slug: string;
+  };
+}): Promise<Metadata | undefined> {
   let post = await getPost(params.slug);
 
   let {
@@ -52,14 +51,13 @@ export async function generateMetadata(
   };
 }
 
-export default async function Blog(
-  props: {
-    params: Promise<{
-      slug: string;
-    }>;
-  }
-) {
-  const params = await props.params;
+export default async function Blog({
+  params,
+}: {
+  params: {
+    slug: string;
+  };
+}) {
   let post = await getPost(params.slug);
 
   if (!post) {

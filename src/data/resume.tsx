@@ -17,7 +17,7 @@ export const DATA = {
     "JavaScript",
     "Typescript",
     "Node.js",
-    "Express.js",
+    "Express",
     "MongoDB",
     "Tailwind CSS",
     "HTML",
@@ -29,11 +29,14 @@ export const DATA = {
     "Python",
     "Git",
     "GitHub",
+    "AWS",
+    "Docker",
+    
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "/#contact", icon: Contact, label: "Contact" }, // Add this line
+    // { href: "/#contact", icon: Contact, label: "Contact" }, // Add this line
   ],
   contact: {
     email: "ashwaniagarwal333@gmail.com",
@@ -53,21 +56,20 @@ export const DATA = {
         navbar: true,
       },
       //twitter
-      X: {
-        // changes made perfect
-        name: "X",
-        url: "https://dub.sh/dillion-twitter",
-        icon: Icons.x,
+      // X: {
+      //   name: "X",
+      //   url: "https://dub.sh/dillion-twitter",
+      //   icon: Icons.x,
 
-        navbar: false,
-      },
+      //   navbar: false,
+      // },
       // X is also disabled
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
-        navbar: false,
-      },
+      // Youtube: {
+      //   name: "Youtube",
+      //   url: "https://dub.sh/dillion-youtube",
+      //   icon: Icons.youtube,
+      //   navbar: false,
+      // },
       // youtbe is disabled
       Email: {
         name: "Send Email",
@@ -80,12 +82,24 @@ export const DATA = {
 
   work: [
     {
+      company: "Harman Connected Services",
+      // href: "https://splunk.com",
+      badges: [],
+      // location: "",
+      title: "Software Engineer",
+      // logoUrl: "/splunk.svg",
+      start: "July 2025",
+      end: "Present",
+      description:
+        "Developed and maintained scalable, enterprise-grade RESTful APIs using Node.js and Express.js with clean, modular architecture. Implemented secure server-side logic using modern JavaScript (ES6+), including authentication, authorization, input validation, and centralized error handling to ensure reliability and data integrity. Applied MVC and modular design patterns to enhance code readability, scalability, and long-term maintainability for evolving business needs.",
+    },
+    {
       company: "iNeuron.ai",
       // href: "https://splunk.com",
       badges: [],
       // location: "",
-      title: "Full Stack Intern",
-      logoUrl: "",
+      title: "Software Engineer Intern",
+      // logoUrl: "/splunk.svg",
       start: "May 2023",
       end: "July 2023",
       description:
@@ -97,9 +111,9 @@ export const DATA = {
       badges: [],
       // location: "San Francisco, CA",
       title: "Freelancer",
-      logoUrl: "",
+      // logoUrl: "/lime.svg",
       start: "January 2022",
-      end: "Present",
+      end: "July 2025",
       description:
         "As a freelancer, I have developed full-stack web applications, optimized backend systems, and designed intuitive user interfaces using React.js, Node.js, and MongoDB. I have worked with clients to build custom solutions, integrate APIs, enhance performance, and deploy scalable applications on AWS, ensuring efficient, user-friendly, and high-performing digital experiences. and also worked on various othem excitng projects 🚀.",
     },
@@ -149,7 +163,7 @@ export const DATA = {
     {
       title: "TutorSpot",
       href: "",
-      dates: "June 2024 - Nov 2024",
+      // dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
         "TutorSpot connects students with expert tutors for personalized learning, offering real-time booking, subject-wise recommendations, and a seamless user experience.",
@@ -180,7 +194,7 @@ export const DATA = {
     {
       title: "CharityWave",
       href: "",
-      dates: "March 2024 - December 2024",
+      // dates: "June 2023 - Present",
       active: true,
       description:
         "CharityWave is a crowdfunding platform that connects donors with verified causes, enabling seamless donations and transparent fund tracking to support meaningful social initiatives.",
@@ -215,7 +229,7 @@ export const DATA = {
     {
       title: "ThoughtStream",
       href: "",
-      dates: "April 2023 - July 2023",
+      // dates: "April 2023 - September 2023",
       active: true,
       description:
         "ThoughtWave is a dynamic blogging platform where users can share ideas, engage with content, and connect through interactive features like commenting, liking, and personalized recommendations.",
@@ -239,7 +253,7 @@ export const DATA = {
         },
         {
           type: "Source",
-          href: "https://github.com/coder-ashwani/Thoughtstream",
+          href: "https://github.com/coder-ashwani/Thoughstream",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -249,7 +263,7 @@ export const DATA = {
     {
       title: "Ecommerce Store",
       href: "",
-      dates: "April 2023 - December 2023",
+      // dates: "April 2023 - March 2024",
       active: true,
       description:
         "E-Commerce Website is a user-friendly online shopping platform offering a seamless browsing, secure payment, and efficient order management experience for both buyers and sellers.",

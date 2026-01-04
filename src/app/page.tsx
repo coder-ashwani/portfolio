@@ -8,17 +8,12 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
-      <Analytics />
-      <SpeedInsights />
-      {/* // for Website analytics */}
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
@@ -49,7 +44,7 @@ export default function Page() {
       <section id="download-resume" className="mx-auto w-full max-w-2xl">
         <BlurFade delay={BLUR_FADE_DELAY}>
           <Link
-            href="https://drive.google.com/file/d/13bkpg2hrsnvZCm8zM8iJjGmB5OGkSYBV/view?usp=sharing"
+            href="https://drive.google.com/file/d/1tsGFt7dFOa6oMMkOPi8PBHC8oMJ3ukqB/view?usp=sharing"
             legacyBehavior
           >
             <a
@@ -88,7 +83,7 @@ export default function Page() {
                 altText={work.company}
                 title={work.company}
                 subtitle={work.title}
-                // href={work.href}
+                href={work.href}
                 badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
                 description={work.description}
@@ -211,21 +206,21 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {/* {DATA.hackathons.map((project, id) => (
-                // <BlurFade
-                //   key={project.title + project.dates}
-                //   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
-                // >
-                //   <HackathonCard
-                //     title={project.title}
-                //     description={project.description}
-                //     location={project.location}
-                //     dates={project.dates}
-                //     image={project.image}
-                //     links={project.links}
-                //   />
-                // </BlurFade>
-              ))} */}
+              {DATA.hackathons.map((project, id) => (
+                <BlurFade
+                  key={project.title + project.dates}
+                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
+                >
+                  <HackathonCard
+                    title={project.title}
+                    description={project.description}
+                    location={project.location}
+                    dates={project.dates}
+                    image={project.image}
+                    links={project.links}
+                  />
+                </BlurFade>
+              ))}
             </ul>
           </BlurFade>
         </div>
@@ -300,6 +295,7 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+      
     </main>
   );
 }
