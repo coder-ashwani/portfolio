@@ -1,5 +1,19 @@
 import { Icons } from "@/components/icons";
 import { Contact, HomeIcon, NotebookIcon, NotebookPen } from "lucide-react";
+import React from "react";
+
+type Hackathon = {
+  title: string;
+  description: string;
+  dates: string;
+  location: string;
+  image?: string;
+  links?: readonly {
+    title: string;
+    icon: React.ReactNode;
+    href: string;
+  }[];
+};
 
 export const DATA = {
   name: "Ashwani Agrawal",
@@ -83,25 +97,27 @@ export const DATA = {
   work: [
     {
       company: "Harman Connected Services",
-      // href: "https://splunk.com",
+      href: "",
       badges: [],
       // location: "",
       title: "Software Engineer",
       // logoUrl: "/splunk.svg",
       start: "July 2025",
       end: "Present",
+      logoUrl: "",
       description:
         "Developed and maintained scalable, enterprise-grade RESTful APIs using Node.js and Express.js with clean, modular architecture. Implemented secure server-side logic using modern JavaScript (ES6+), including authentication, authorization, input validation, and centralized error handling to ensure reliability and data integrity. Applied MVC and modular design patterns to enhance code readability, scalability, and long-term maintainability for evolving business needs.",
     },
     {
       company: "iNeuron.ai",
-      // href: "https://splunk.com",
+      href: "",
       badges: [],
       // location: "",
       title: "Software Engineer Intern",
       // logoUrl: "/splunk.svg",
       start: "May 2023",
       end: "July 2023",
+      logoUrl: "",
       description:
         "Built a CRM platform for a client with a full-stack architecture, it offers features like real-time expense tracking, budget management, visual analytics, and collaborative group expenses. The platform ensures a seamless user experience with an intuitive UI and secure data handling.",
     },
@@ -114,6 +130,7 @@ export const DATA = {
       // logoUrl: "/lime.svg",
       start: "January 2022",
       end: "July 2025",
+      logoUrl: "",
       description:
         "As a freelancer, I have developed full-stack web applications, optimized backend systems, and designed intuitive user interfaces using React.js, Node.js, and MongoDB. I have worked with clients to build custom solutions, integrate APIs, enhance performance, and deploy scalable applications on AWS, ensuring efficient, user-friendly, and high-performing digital experiences. and also worked on various othem excitng projects 🚀.",
     },
@@ -163,7 +180,7 @@ export const DATA = {
     {
       title: "TutorSpot",
       href: "",
-      // dates: "Jan 2024 - Feb 2024",
+      dates: "",
       active: true,
       description:
         "TutorSpot connects students with expert tutors for personalized learning, offering real-time booking, subject-wise recommendations, and a seamless user experience.",
@@ -194,7 +211,7 @@ export const DATA = {
     {
       title: "CharityWave",
       href: "",
-      // dates: "June 2023 - Present",
+      dates: "",
       active: true,
       description:
         "CharityWave is a crowdfunding platform that connects donors with verified causes, enabling seamless donations and transparent fund tracking to support meaningful social initiatives.",
@@ -229,7 +246,7 @@ export const DATA = {
     {
       title: "ThoughtStream",
       href: "",
-      // dates: "April 2023 - September 2023",
+      dates: "",
       active: true,
       description:
         "ThoughtWave is a dynamic blogging platform where users can share ideas, engage with content, and connect through interactive features like commenting, liking, and personalized recommendations.",
@@ -263,7 +280,7 @@ export const DATA = {
     {
       title: "Ecommerce Store",
       href: "",
-      // dates: "April 2023 - March 2024",
+      dates: "",
       active: true,
       description:
         "E-Commerce Website is a user-friendly online shopping platform offering a seamless browsing, secure payment, and efficient order management experience for both buyers and sellers.",
@@ -296,6 +313,14 @@ export const DATA = {
     },
   ],
   hackathons: [
+    {
+      title: "",
+      description: "",
+      dates: "",
+      location: "",
+      image: "",
+      links: [],
+    },
     // {
     //   title: "Smart India Hackothan",
     //   // dates: "November 23rd - 25th, 2018",
