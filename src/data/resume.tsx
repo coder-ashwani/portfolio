@@ -217,21 +217,21 @@ export const DATA = {
         "CharityWave is a crowdfunding platform that connects donors with verified causes, enabling seamless donations and transparent fund tracking to support meaningful social initiatives.",
       technologies: [
         // "Next.js",
-        "Reactjs",
+        "ReactJS",
         "Redux",
         "Typescript",
-        // "PostgreSQL",
         // "Prisma",
         "TailwindCSS",
-        "MongoDB",
+        "Supabase",
         "Nodejs",
         "Expressjs",
         "Git",
+        "Hashing",
       ],
       links: [
         {
           type: "Website",
-          href: "",
+          href: "https://charity-wave-frontend.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
